@@ -10,10 +10,10 @@ from botocore.exceptions import ClientError
 # ==========================================
 
 GROUP_NAME = "Admin_ESIS"
-USERNAME_PREFIX = "student"
+USERNAME_PREFIX = "Masterant_"
 NUMBER_OF_USERS = 35
 
-OUTPUT_FILE = "ESIS_IAM_Users.csv"
+OUTPUT_FILE = "AWS_RDS_Lab_ESIS_IAM_Users.csv"
 
 iam = boto3.client("iam")
 
