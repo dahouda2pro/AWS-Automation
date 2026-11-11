@@ -109,7 +109,7 @@ for i in range(1, NUMBER_OF_USERS + 1):
             "Username": username,
             "Group": GROUP_NAME,
             "TemporaryPassword": password,
-            "ConsoleURL": "https://console.aws.amazon.com/"
+            "ConsoleURL": "https://taylormutame.signin.aws.amazon.com/console"
         })
 
         print(f"[SUCCESS] Console access created for {username}.")
