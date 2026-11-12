@@ -1,0 +1,15 @@
+Step 1. Connect to your EC2 instance
+ssh -i "BDD-Server-ESIS.pem" ec2-user@ec2-3-221-160-141.compute-1.amazonaws.com
+
+Step 2. Install MySQL client
+sudo apt update
+sudo apt install mysql-client -y
+
+
+Step 3. Test the RDS connection
+ nc -vz -w 10 database-1-esis.cc52is8u4dw1.us-east-1.rds.amazonaws.com 3306
+
+
+EC2 => VPC ID : vpc-09504f905cec8aaf6
+
+RDS => VPC ID : vpc-09504f905cec8aaf6
