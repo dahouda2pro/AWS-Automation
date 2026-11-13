@@ -18,9 +18,9 @@ DB_PORT = int(os.getenv("DB_PORT", "3306"))
 DB_USER = os.getenv("DB_USER")
 DB_PASSWORD = os.getenv("DB_PASSWORD")
 
-NUMBER_OF_STUDENTS = 30
+NUMBER_OF_STUDENTS = 5
 
-OUTPUT_FILE = "student_credentials.csv"
+OUTPUT_FILE = "student_credentials_updated.csv"
 CA_FILE = "global-bundle.pem"
 
 DATABASE_SUFFIX = "_db"
@@ -91,7 +91,7 @@ try:
 
         for i in range(1, NUMBER_OF_STUDENTS + 1):
 
-            username = f"student{i:03d}"
+            username = f"student_added{i:03d}"
             database = f"{username}{DATABASE_SUFFIX}"
 
             password = generate_password()
